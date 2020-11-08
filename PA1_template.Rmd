@@ -13,7 +13,10 @@ library("data.table")
 library(ggplot2)
 fileUrl <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"
 download.file(fileUrl, destfile = paste0(getwd(), '/activity.zip'), method = "curl")
+#Unzip data to obtain a csv file
 unzip("activity.zip")
+#Reading csv Data into Data.Table
+activityDT <- data.table::fread(input = "activity.csv")
 ```
 
 
