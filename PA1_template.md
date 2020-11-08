@@ -1,0 +1,36 @@
+---
+title: 'Reproducible Research: Peer Assessment 1'
+output:
+  html_document:
+    keep_md: yes
+  pdf_document: default
+---
+
+## Loading and preprocessing the data
+
+
+```r
+library("data.table")
+library(ggplot2)
+fileUrl <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"
+download.file(fileUrl, destfile = paste0(getwd(), '/activity.zip'), method = "curl")
+unzip("activity.zip")
+```
+
+
+## What is mean total number of steps taken per day?
+
+
+
+
+## What is the average daily activity pattern?
+
+
+
+## Imputing missing values
+
+
+
+## Are there differences in activity patterns between weekdays and weekends?
+
+
